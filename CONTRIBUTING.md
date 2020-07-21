@@ -170,7 +170,7 @@ commits you created to apply the review changes to your branch. Your branch
 now looks something like this:
 
 ```sh
-$ git log master.. --oneline --decorate=no
+$ git log main.. --oneline --decorate=no
 4928d57 docs: Fix typos and fold long lines
 829c6c8 apply review feedback changes
 7c9b1b2 remove blank lines
@@ -273,6 +273,9 @@ This notification allows the team to once again review your PR more quickly.
 
 Before your PRs are merged into the main code base, they are reviewed. We
 encourage anybody to review any PR and leave feedback.
+
+The [Reviewing Guide](Reviewing.md) provides more information on the 
+responsibilities of maintainers and the process for reviewing a PR.
 
 ## Contact
 
