@@ -8,4 +8,4 @@ jobs:
     - name: DCO Check
       uses: jbryce/dco@master
       with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
