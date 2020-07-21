@@ -9,4 +9,4 @@ jobs:
     - name: DCO Check
       uses: tim-actions/dco@master
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
