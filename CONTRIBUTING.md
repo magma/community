@@ -2,7 +2,7 @@
 
 * [Code of Conduct](#code-of-conduct)
 * [Pull requests](#pull-requests)
-* [Certificate of Origin](#certificate-of-origin)
+* [Developer's Certificate of Origin (DCO)](#developers-certificate-of-origin)
 * [GitHub best practices](#github-best-practices)
 * [GitHub workflow](#github-workflow)
 * [Reviews](#reviews)
