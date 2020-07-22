@@ -28,4 +28,4 @@ If a bug is present on master and released branches, fix it on master first, the
 
 Feature development should be done only on master.
 
-Keep the authorship of a commit clear by maintaining a correct list of "Signed-off-by:"s. If a confusing situation comes up, as it occasionally does, bring it up on the mailing list. If you explain the use of "Signed-off-by:" to a new developer, explain not just how but why, since the intended meaning of "Signed-off-by:" is more important than the syntax. As part of your explanation, quote or provide a URL to the
+Keep the authorship of a commit clear by maintaining a correct list of "Signed-off-by"s. If a confusing situation comes up, as it occasionally does, bring it up on the mailing list. If you explain the use of "Signed-off-by:" to a new developer, explain not just how but why, since the intended meaning of "Signed-off-by" is more important than the syntax. As part of your explanation, quote or provide a URL to the [contributing guide](CONTRIBUTING.md#developers-certificate-of-origin).
