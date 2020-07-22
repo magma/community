@@ -33,6 +33,13 @@ Every commit should include a Signed-Off-By tag as a certification that the deve
 $ git commit -s
 ```
 
+In the event that you push a commit without signing off, you can amend the commit and force push to update your branch and pull request.
+
+```sh
+$ git commit -s --amend --no-edit
+$ git push --force 
+```
+
 ## Repository specific contribution guides
 
 In addition to the general principles below, other repos may have specific
