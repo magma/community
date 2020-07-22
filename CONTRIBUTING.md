@@ -22,11 +22,23 @@ All contributors must agree to the project [code of conduct](CODE_OF_CONDUCT.md)
 
 All the repositories accept contributions via [GitHub Pull requests (PR)](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests). Submit PRs by following the [GitHub workflow](#github-workflow).
 
-## Certificate of Origin
+## Developer's Certificate of Origin
 
-In order to get a clear contribution chain of trust we use the [signed-off-by
-language](https://ltsi.linuxfoundation.org/software/signed-off-process/)
-used by the Linux kernel project.
+In order to have a clear contribution chain of trust we use the [signed-off-by
+language](https://developercertificate.org/) and process used by the Linux kernel project.
+
+Every commit should include a Signed-Off-By tag as a certification that the developer has the right to submit the contribution and they are agreeing to the language of the Developer's Certificate of Origin (DCO). PRs cannot be merged without following this process. Use to `-s` or `--signoff` flag with your commit.
+
+```sh
+$ git commit -s
+```
+
+In the event that you push a commit without signing off, you can amend the commit and force push to update your branch and pull request.
+
+```sh
+$ git commit -s --amend --no-edit
+$ git push --force 
+```
 
 ## Repository specific contribution guides
 
