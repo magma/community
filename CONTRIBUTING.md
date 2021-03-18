@@ -37,7 +37,7 @@ In the event that you push a commit without signing off, you can amend the commi
 
 ```sh
 $ git commit -s --amend --no-edit
-$ git push --force 
+$ git push --force
 ```
 
 ## Repository specific contribution guides
@@ -84,7 +84,7 @@ The issue is automatically closed by GitHub when the
 
 ##### Fork and clone
 
-In this example, we configure a Git environment to contribute to this very 
+In this example, we configure a Git environment to contribute to this very
 `Community` repo. We create a sample branch, incorporate reviewer feedback, and rebase our commits.
 
 1. Fork the [upstream repository](https://help.github.com/articles/cloning-a-repository):
@@ -92,27 +92,27 @@ In this example, we configure a Git environment to contribute to this very
 1. [Clone your forked copy of the upstream repository](https://help.github.com/articles/cloning-a-repository):
 
 1. While on your *forked copy*, select the green button `Clone or download`
-   and copy the URL. 
+   and copy the URL.
 
 1. Run the commands below and **paste the copied URL** (previous step),
    so your real GitHub user name replaces `your-github-username` below.
-  
+
 ```sh
 $ git clone https://github.com/{your-github-username}/community
 $ cd community
 ```
-   
+
 >**Note:** Cloning a forked repository automatically gives a remote `origin`.
 
 ##### Configure the upstream remote
 
 Next, add the remote `upstream`. Configuring this remote allows you to
-synchronize your forked copy, `origin`, with the `upstream`. The 
-`upstream` URL varies by repository. We use the `upstream` from the Community for this example. 
+synchronize your forked copy, `origin`, with the `upstream`. The
+`upstream` URL varies by repository. We use the `upstream` from the Community for this example.
 
-1. Change directory into `community`. 
+1. Change directory into `community`.
 
-1. Set the remote `upstream` as follows. 
+1. Set the remote `upstream` as follows.
 
     ```sh
     $ git remote add upstream https://github.com/magma/community
@@ -121,10 +121,10 @@ synchronize your forked copy, `origin`, with the `upstream`. The
 1. Run `git remote -v`. Your remotes should appear similar to these:
 
     ```
-    origin  https://github.com/your-github-username/community.git (fetch)  
-    origin  https://github.com/your-github-username/community.git (push)  
-    upstream  https://github.com/magma/community.git (fetch)  
-    upstream  https://github.com/magma/community.git (push)  
+    origin  https://github.com/your-github-username/community.git (fetch)
+    origin  https://github.com/your-github-username/community.git (push)
+    upstream  https://github.com/magma/community.git (fetch)
+    upstream  https://github.com/magma/community.git (push)
     ```
 
 For more details, see how to [set up a git remote](https://help.github.com/articles/configuring-a-remote-for-a-fork).
@@ -137,7 +137,7 @@ For more details, see how to [set up a git remote](https://help.github.com/artic
     $ git checkout -b fix-spelling-errors
     ```
 
-    >**Warning:** *Never* make changes directly to the `master` or `main` 
+    >**Warning:** *Never* make changes directly to the `master` or `main`
     > branch--*always* create a new "topic branch" for PR work.
 
 1. Make some editorial changes. In this example, we modify the file that
@@ -161,7 +161,7 @@ For more details, see how to [set up a git remote](https://help.github.com/artic
 
    >**Note:** The `-u` option tells `git` to "link" your local clone with
    > your remote fork so that it knows from now on that the local repository
-   > and the remote fork refer to "the same" upstream repository. Strictly 
+   > and the remote fork refer to "the same" upstream repository. Strictly
    >speaking, this option is only required the first time you call `git push`
    >for a new clone.
 
@@ -189,7 +189,7 @@ $ git log main.. --oneline --decorate=no
 60e2b2b doh - missed one
 ```
 
->**Note:** The `git log` command compares your current branch 
+>**Note:** The `git log` command compares your current branch
 >(`fix-spelling-errors`) with the `main` branch and lists all the commits,
 >one per line.
 
@@ -233,7 +233,7 @@ multiple commits on your branch. Follow these steps.
     pick 3a4ba3f doh - missed one
     ```
 
-1. In your editor, read the comments at the bottom of the screen. 
+1. In your editor, read the comments at the bottom of the screen.
    Do not modify the first line, `pick 2e335ac docs: Fix typos ...`. Instead, revise `pick` to `squash` at the start of all following lines.
 
     Example output:
@@ -246,11 +246,11 @@ multiple commits on your branch. Follow these steps.
     ```
 
 1. Save your changes and quit the editor. Git puts you *back* into your
-   editor. You will see all the commit *messages*. 
+   editor. You will see all the commit *messages*.
 
-1. At top is your first commit, which should be in the 
-   [correct format](#patch-format). Keep your first commit and delete 
-   all the following commits, as appropriate, based on 
+1. At top is your first commit, which should be in the
+   [correct format](#patch-format). Keep your first commit and delete
+   all the following commits, as appropriate, based on
    the review feedback.
 
 1. Save the file and quit the editor. Once this operation completes, the four
@@ -275,7 +275,7 @@ multiple commits on your branch. Follow these steps.
 >those changes into your PR branch. This ensures your fork is now "up to
 >date" with the upstream repository. The `-f` option is a "force push". Since
 >you created a new commit using `git rebase`, you must "overwrite" the old
->copy of your branch in your fork on GitHub. 
+>copy of your branch in your fork on GitHub.
 
 Your PR is now updated on GitHub. To ensure team members are aware of this,
 leave a message on the PR stating something like, "Review feedback applied".
@@ -286,7 +286,7 @@ This notification allows the team to once again review your PR more quickly.
 Before your PRs are merged into the main code base, they are reviewed. We
 encourage anybody to review any PR and leave feedback.
 
-The [Reviewing Guide](Reviewing.md) provides more information on the 
+The [Reviewing Guide](Reviewing.md) provides more information on the
 responsibilities of maintainers and the process for reviewing a PR.
 
 ## Contact
@@ -294,11 +294,11 @@ responsibilities of maintainers and the process for reviewing a PR.
 The Magma community can be reached
 [through various channels](https://www.magmacore.org).
 
-## Project maintainers
+## Project committers
 
-The Magma project maintainers are the people accepting or
+The Magma project committers are the people accepting or
 rejecting any PR. Although [anyone can review PRs](#reviews), only the
-review of a maintainer counts towards the approval of a PR.
+review of a committer counts towards the approval of a PR.
 
 Approvers are listed in GitHub teams for each repository. The project
 uses the
