@@ -11,7 +11,7 @@ Magma is an open-source software platform that gives network operators an open, 
 
 - Slack:
   - [Magma](https://magmacore.slack.com) workspace
-  - [Slack Invite](https://join.slack.com/t/magmacore/shared_invite/zt-g76zkofr-g6~jYiS3KRzC9qhAISUC2A)
+  - [Slack Invite](https://slack.magmacore.org/)
 - Mailing lists:
   - Join [magma-dev](https://groups.google.com/forum/#!forum/magma-dev) for technical discussions
   - Join [magma-announce](https://groups.google.com/forum/#!forum/magma-announce) for announcements
